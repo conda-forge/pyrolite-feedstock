@@ -1,5 +1,5 @@
 {% set name = "pyrolite" %}
-{% set version = "0.3.1" %}
+{% set version = "0.3.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pyrolite-{{ version }}.tar.gz
-  sha256: f43a2a715db325340b45ddbfbae49aab15d00c998d0482a59a8030f2616e3276
+  sha256: 8746191abe563cd20401d5fdab5ec6d9dd854ac2c1a9d9063f86cec44c622ba5
 
 build:
   number: 0
