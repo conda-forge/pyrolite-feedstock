@@ -10,32 +10,26 @@ source:
   sha256: fc17fb6f62a90d6615d9e17fe1fcae8794ae7ddadc10b5460732acc584e1163e
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
-    - python >=3.7
+    - python >=3.8
   run:
-    - python >=3.7
-    - joblib
-    - matplotlib-base >=3.5
-    - mpltern >=0.3.4
-    - mpmath
+    - python >=3.8
     - numpy
     - numpydoc
-    - openpyxl
-    - pandas >=1.0
+    - tinydb >4.1
     - periodictable
-    - psutil
-    - requests
+    - matplotlib-base >=3.5
+    - mpltern >=0.4.0
     - scipy >=1.2
     - sympy >=1.7
-    - tinydb >4.1
-    - typing-extensions
-    - xlrd
+    - pandas >=1.0
+    - requests
 
 test:
   imports:
