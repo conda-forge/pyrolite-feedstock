@@ -10,7 +10,7 @@ source:
   sha256: fc17fb6f62a90d6615d9e17fe1fcae8794ae7ddadc10b5460732acc584e1163e
 
 build:
-  number: 2
+  number: 3
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -18,7 +18,8 @@ requirements:
   host:
     - pip
     - python >=3.8
-    - versioneer[toml]
+    - versioneer
+    - tomli
   run:
     - python >=3.8
     - numpy
