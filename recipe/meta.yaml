@@ -1,5 +1,5 @@
 {% set name = "pyrolite" %}
-{% set version = "0.3.5.post0" %}
+{% set version = "0.3.6" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pyrolite-{{ version }}.tar.gz
-  sha256: bd6cdc436aac1c5e5b3a4e95ea47acdbefca4fccc57407ff75492a422d5442c6
+  sha256: c583fdbddcaaeded00dd59354373380c7b1887095330426cf4c5dba722180bc0
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -20,6 +20,7 @@ requirements:
     - python >=3.8
     - versioneer
     - tomli
+    - setuptools
   run:
     - python >=3.8
     - numpy
