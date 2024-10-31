@@ -10,7 +10,7 @@ source:
   sha256: c583fdbddcaaeded00dd59354373380c7b1887095330426cf4c5dba722180bc0
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -20,6 +20,7 @@ requirements:
     - python >=3.8
     - versioneer
     - tomli
+    - setuptools
   run:
     - python >=3.8
     - numpy
