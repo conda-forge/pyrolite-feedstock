@@ -6,23 +6,23 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pyrolite-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pyrolite-{{ version }}.tar.gz
   sha256: c583fdbddcaaeded00dd59354373380c7b1887095330426cf4c5dba722180bc0
 
 build:
-  number: 1
+  number: 2
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
-    - python >=3.8
+    - python {{ python_min }}
     - versioneer
     - tomli
     - setuptools
   run:
-    - python >=3.8
+    - python >={{ python_min }}
     - numpy
     - numpydoc
     - tinydb >4.1
@@ -35,6 +35,8 @@ requirements:
     - requests
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - pyrolite
     - pyrolite.plot
