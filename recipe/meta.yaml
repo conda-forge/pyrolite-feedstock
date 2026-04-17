@@ -1,5 +1,5 @@
 {% set name = "pyrolite" %}
-{% set version = "0.3.6" %}
+{% set version = "0.3.7" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pyrolite-{{ version }}.tar.gz
-  sha256: c583fdbddcaaeded00dd59354373380c7b1887095330426cf4c5dba722180bc0
+  sha256: bc257792a611b2c5c8540537e6a8545b58704c7d5c81f19d4e4b3362ec9a1ad4
 
 build:
-  number: 2
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -27,7 +27,7 @@ requirements:
     - numpydoc
     - tinydb >4.1
     - periodictable
-    - matplotlib-base >=3.5
+    - matplotlib-base >=3.9
     - mpltern >=0.4.0
     - scipy >=1.2
     - sympy >=1.7
