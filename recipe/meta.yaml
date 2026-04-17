@@ -27,7 +27,7 @@ requirements:
     - numpydoc
     - tinydb >4.1
     - periodictable
-    - matplotlib-base >=3.5
+    - matplotlib-base >=3.9
     - mpltern >=0.4.0
     - scipy >=1.2
     - sympy >=1.7
