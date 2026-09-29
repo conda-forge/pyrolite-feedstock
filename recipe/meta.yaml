@@ -10,7 +10,7 @@ source:
   sha256: 46a40fd5963d7998977bd5953971638c023143eb62dfa579251f6686cd50bb88
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -18,14 +18,11 @@ requirements:
   host:
     - pip
     - python {{ python_min }}
-    - versioneer
-    - tomli
-    - setuptools
+    - setuptools >=80
+    - setuptools-scm[simple] >=8
   run:
     - python >={{ python_min }}
     - numpy
-    - numpydoc
-    - tinydb >4.1
     - periodictable
     - matplotlib-base >=3.9
     - mpltern >=0.4.0
