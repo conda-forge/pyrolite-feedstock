@@ -5,7 +5,7 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pyrolite-feedst
 
 Home: https://github.com/morganjwilliams/pyrolite
 
-Package license: LicenseRef-CSIRO-Open-Source
+Package license: MIT
 
 Summary: Tools for geochemical data analysis.
 
