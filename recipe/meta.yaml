@@ -18,14 +18,11 @@ requirements:
   host:
     - pip
     - python {{ python_min }}
-    - versioneer
-    - tomli
-    - setuptools
+    - setuptools >=80
+    - setuptools-scm[simple] >=8
   run:
     - python >={{ python_min }}
     - numpy
-    - numpydoc
-    - tinydb >4.1
     - periodictable
     - matplotlib-base >=3.9
     - mpltern >=0.4.0
@@ -44,8 +41,7 @@ test:
 about:
   home: https://github.com/morganjwilliams/pyrolite
   summary: Tools for geochemical data analysis.
-  license: LicenseRef-CSIRO-Open-Source
-  license_family: BSD
+  license: MIT
   license_file: LICENSE
   doc_url: https://pyrolite.readthedocs.io/
   dev_url: https://github.com/morganjwilliams/pyrolite
