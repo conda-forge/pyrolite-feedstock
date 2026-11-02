@@ -1,5 +1,5 @@
 {% set name = "pyrolite" %}
-{% set version = "0.3.8.post1" %}
+{% set version = "0.3.9" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/pyrolite-{{ version }}.tar.gz
-  sha256: ccfaad9dea81732f75d90004c850b67f948eca9d340afc4c0bb3741acc595ec6
+  sha256: 3ed94f56f621cf9aa19d2670e31daa5e9106a599ef3734adcfb7aaec9a77a31b
 
 build:
   number: 0
